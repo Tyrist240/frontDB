@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pashentsev.philarmoniafront.controller.CrudOrgEventController">
+    <children>
+        <Text fill="WHITE" layoutX="7.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organizers and events" textAlignment="CENTER">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Button fx:id="backButton" layoutX="315.0" layoutY="370.0" mnemonicParsing="false" onAction="#back" prefHeight="15.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" text="Back" />
+        <Pagination fx:id="pagination" layoutX="392.0" prefHeight="400.0" prefWidth="408.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" />
+        <ChoiceBox fx:id="numOfPages" layoutX="338.0" layoutY="1.0" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: transparent; -fx-background-color: #ffffff;" />
+        <Text fill="#0c12d0" layoutX="244.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rows per pages:" wrappingWidth="94.470703125" />
+        <Button fx:id="createButton" layoutX="14.0" layoutY="370.0" mnemonicParsing="false" onAction="#create" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" text="New" />
+        <Button fx:id="editButton" layoutX="75.0" layoutY="370.0" mnemonicParsing="false" onAction="#edit" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" text="Edit" />
+        <Button fx:id="deleteButton" layoutX="135.0" layoutY="370.0" mnemonicParsing="false" onAction="#delete" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff;" text="Delete" />
+        <TextField fx:id="nameText" layoutX="14.0" layoutY="48.0" prefHeight="26.0" prefWidth="208.0" promptText="name" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="surnameText" layoutX="14.0" layoutY="88.0" prefHeight="26.0" prefWidth="208.0" promptText="surname" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+        <TextField fx:id="birthdayText" layoutX="14.0" layoutY="130.0" prefHeight="26.0" prefWidth="208.0" promptText="birthday" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="eventNameText" layoutX="14.0" layoutY="174.0" prefHeight="26.0" prefWidth="208.0" promptText="eventName" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="eventPlaceText" layoutX="14.0" layoutY="264.0" prefHeight="26.0" prefWidth="208.0" promptText="eventPlace" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="eventDateText" layoutX="14.0" layoutY="305.0" prefHeight="26.0" prefWidth="208.0" promptText="eventDate" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+      <ChoiceBox fx:id="eventTypeText" layoutX="14.0" layoutY="220.0" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-width: 0px 0px 2px 0px;" />
+    </children>
+</AnchorPane>
